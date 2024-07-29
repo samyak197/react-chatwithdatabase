@@ -1,0 +1,122 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #333; /* Dark grey container background */
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff; /* White text color */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #666; /* Dark grey border bottom */
+}
+
+.data-table th {
+  background-color: #444; /* Dark grey header background */
+  color: #fff; /* White text color */
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #555; /* Dark grey alternate row background */
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background-color: #666; /* Dark grey alternate row background */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dot-flashing {
+  width: 10px;
+  height: 10px;
+  background-color: #fff; /* White dot color */
+  border-radius: 50%;
+  animation: dot-flashing 1s infinite alternate;
+}
+
+@keyframes dot-flashing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.query-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.query-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green submit button */
+  color: #fff; /* White text color */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.submit-button:disabled {
+  background-color: #ccc; /* Light grey disabled button */
+  cursor: not-allowed;
+}
+
+.download-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #3498db; /* Blue download button */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.download-button:hover {
+  background-color: #2980b9; /* Darker blue hover color */
+}
+
+.error {
+  color: #f44336; /* Red error message */
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.Chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .Chat form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .Chat input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .Chat button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Chat button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .response {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    max-width: 500px;
+    word-wrap: break-word;
+  }
+  
