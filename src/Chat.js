@@ -14,7 +14,7 @@ function Chat() {
     setIsLoading(true);
 
     try {
-      const res = await axios.post('http://3.109.5.130/api/genai/', { query });
+      const res = await axios.post('http://3.110.134.22/api/genai/', { query });
       const userMessage = { text: query, type: 'user'};
       const botMessage = { text: res.data.message, type: 'bot', time: new Date().toLocaleTimeString() };
 
